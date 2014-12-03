@@ -1,4 +1,4 @@
-# similarity 
+# similarity
 
 How similar are these two strings?
 
@@ -20,7 +20,7 @@ similarity("food", "fool") // 0.75
 similarity("ding", "plow") // 0
 similarity("chicken", "chick") // 0.714285714
 similarity("es6-shim", "es6 shim") // 0.875
-
+similarity("ES6-Shim", "es6 shim") // 0.875 (case insensitive)
 ```
 
 ## Tests
@@ -30,16 +30,13 @@ npm install
 npm test
 ```
 
-
 ## Dependencies
 
 - [leven](https://github.com/sindresorhus/leven): Measure the difference between two strings using the fastest JS implementation of the Levenshtein distance algorithm
 
-
 ## Dev Dependencies
 
 - [tap](https://github.com/isaacs/node-tap): A Test-Anything-Protocol library
-
 
 ## License
 
