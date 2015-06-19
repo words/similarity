@@ -4,13 +4,13 @@ How similar are these two strings?
 
 ## Installation
 
-Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
-
 ```sh
 npm install similarity --save
 ```
 
 ## Usage
+
+The module exports a single function that compares two strings and returns a value between `0` and `1`. The closer the value is to `1`, the more similar the two string are:
 
 ```js
 var similarity = require("similarity")
@@ -22,6 +22,8 @@ similarity("chicken", "chick") // 0.714285714
 similarity("es6-shim", "es6 shim") // 0.875
 similarity("ES6-Shim", "es6 shim") // 0.875 (case insensitive)
 ```
+
+Note: This module uses [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) to measure similarity, but there are many other algorithms for string comparison. See [clj-fuzzy](http://npm.im/clj-fuzzy) for alternative methods that might better fit your use case.
 
 ## Tests
 
