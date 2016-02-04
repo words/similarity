@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/zeke/similarity",
   "dependencies": {
-    "leven": "^1.0.1"
+    "leven": "^2.0.0"
   },
   "devDependencies": {
     "tap": "^0.4.13"
