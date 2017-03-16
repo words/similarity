@@ -3,6 +3,9 @@
   "version": "1.1.0",
   "description": "How similar are these two strings?",
   "main": "index.js",
+  "bin": {
+    "similarity": "similarity.js"
+  },
   "scripts": {
     "test": "tap test"
   },
@@ -26,6 +29,7 @@
   },
   "homepage": "https://github.com/zeke/similarity",
   "dependencies": {
+    "commander": "^2.9.0",
     "leven": "^2.0.0"
   },
   "devDependencies": {
