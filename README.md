@@ -23,7 +23,14 @@ similarity("es6-shim", "es6 shim") // 0.875
 similarity("ES6-Shim", "es6 shim") // 0.875 (case insensitive)
 ```
 
-Note: This module uses [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) to measure similarity, but there are many other algorithms for string comparison. See [clj-fuzzy](http://npm.im/clj-fuzzy) for alternative methods that might better fit your use case.
+## See Also
+
+Note: This module uses [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) to measure similarity, but there are many other algorithms for string comparison. Here are a few:
+
+- [clj-fuzzy](https://github.com/Yomguithereal/clj-fuzzy) - A handy collection of algorithms dealing with fuzzy strings and phonetics.
+- [natural](https://github.com/NaturalNode/natural) - general natural language facilities for node.
+- [string-similarity](https://github.com/aceakash/string-similarity) - Finds degree of similarity between two strings, based on Dice's Coefficient, which is mostly better than Levenshtein distance.
+- [jaro-winkler](https://github.com/jordanthomas/jaro-winkler) - The Jaro-Winkler distance metric for node and browser.
 
 ## Tests
 
