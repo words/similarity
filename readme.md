@@ -36,7 +36,7 @@ Here are a few:
 
 *   [`clj-fuzzy`](https://github.com/Yomguithereal/clj-fuzzy)
     — Handy collection of algorithms dealing with fuzzy strings and phonetics
-*   [natural](https://github.com/NaturalNode/natural)
+*   [`natural`](https://github.com/NaturalNode/natural)
     — General natural language facilities for node
 *   [`string-similarity`](https://github.com/aceakash/string-similarity)
     — Finds degree of similarity between two strings, based on Dice’s
