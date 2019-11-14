@@ -17,5 +17,8 @@ test('similarity', function(t) {
     4 / 8,
     'case sensitive'
   )
+
+  t.equal(similarity('', ''), 1, 'GH-5')
+
   t.end()
 })
