@@ -12,5 +12,10 @@ test('similarity', function(t) {
   t.equal(similarity('chicken', 'chick'), 5 / 7)
   t.equal(similarity('es6-shim', 'es6 shim'), 7 / 8)
   t.equal(similarity('ES6 Shim', 'es6-shim'), 7 / 8, 'case insensitive')
+  t.equal(
+    similarity('ES6 Shim', 'es6-shim', {sensitive: true}),
+    4 / 8,
+    'case sensitive'
+  )
   t.end()
 })

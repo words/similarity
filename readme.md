@@ -28,6 +28,16 @@ similarity('es6-shim', 'es6 shim') // 0.875
 similarity('ES6-Shim', 'es6 shim') // 0.875 (case insensitive)
 ```
 
+## API
+
+### `similarity(left, right[, options])`
+
+Get the similarity (`number`) between two values (`string`s),
+where `0` is dissimilar, and `1` is equal.
+
+*   `options.sensitive` (`boolean`, default: `false`)
+    — Turn on (`true`) to treat casing differences as differences
+
 ## See also
 
 Note: This module uses [Levenshtein distance][wiki] to measure similarity, but
