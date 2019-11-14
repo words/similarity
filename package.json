@@ -20,7 +20,11 @@
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
   ],
   "main": "index.js",
+  "bin": {
+    "similarity": "cli.js"
+  },
   "files": [
+    "cli.js",
     "index.js"
   ],
   "dependencies": {
