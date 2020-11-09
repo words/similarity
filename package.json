@@ -25,24 +25,29 @@
   },
   "files": [
     "cli.js",
-    "index.js"
+    "index.js",
+    "types/index.d.ts"
   ],
+  "types": "types/index.d.ts",
   "dependencies": {
     "levenshtein-edit-distance": "^2.0.0"
   },
   "devDependencies": {
+    "dtslint": "^4.0.0",
     "nyc": "^15.0.0",
     "prettier": "^1.0.0",
     "remark-cli": "^7.0.0",
     "remark-preset-wooorm": "^6.0.0",
     "tape": "^4.0.0",
+    "typescript": "^4.0.0",
     "xo": "^0.26.0"
   },
   "scripts": {
     "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
     "test-api": "node test",
     "test-coverage": "nyc --reporter lcov tape test.js",
-    "test": "npm run format && npm run test-coverage"
+    "test-types": "dtslint types",
+    "test": "npm run format && npm run test-coverage && npm run test-types"
   },
   "nyc": {
     "check-coverage": true,
